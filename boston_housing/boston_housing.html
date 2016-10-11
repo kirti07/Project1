@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>boston_housing_bkp</title>
+<title>boston_housing</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13202,7 +13202,7 @@ IiIiy9b/A/zyffwWAZl6AAAAAElFTkSuQmCC
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> max_depth = 3.  For max depth =3 , the learning curves converge to a score of ~0.7. Training Score decreases till a limit &amp; then normalizes to a value. In such cases adding more values to the traning set might not help.</p>
-<p><strong><em>EDIT </em></strong> : As the training size increases, the training score increases, becomes more or less constant before almost converging with the test data.</p>
+<p><strong><em>EDIT </em></strong> : As the training size increases, the training score decreases, becomes more or less constant before almost converging with the test data.</p>
 
 </div>
 </div>
@@ -13765,6 +13765,7 @@ SimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppYz/Bz74yBjaYYDBAAAAAElFTkSuQmCC
 <p><strong>Answer:</strong>k-fold cross validation: To estimate perfomance, Given a set of m training examples. we divide them into k folds(~m/k) and in a loop from i=1 to k train the models on all examples that do not belong to i &amp; test it against the example that belongs to i.</p>
 <p>When using GridSearch with cross validation helps us find optimal paramter values for data models.</p>
 <p><strong><em>EDIT-1</em></strong> k-fold cross validation involves dividing the data into k bins, and recusrively taking one of the bins as test set &amp; the remaining bins are considerd as training set. This is done k times, and average the test results from k tests.</p>
+<p><strong>EDIT2*</strong> GridSearch is a way of working through multiple combination of parameter tuning with fewer lines of code.  When using all the available data set for cross validation , we are minimizing the error &amp; increasing accuracy of the model. If we tune the parameters with only on one data set, we might have a high bias.</p>
 
 </div>
 </div>
@@ -13894,7 +13895,7 @@ SimllFJKKaWUUkoppZRSSimllFJKKaWUUkoppYz/Bz74yBjaYYDBAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> 10.  The max depth resulted from this code &gt;&gt; what I had expected in Question 6.</p>
+<p><strong>Answer: </strong> 4.  The max depth resulted from this code is slightly greater than what I had expected in Question 6.</p>
 
 </div>
 </div>
